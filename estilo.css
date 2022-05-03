@@ -1,0 +1,603 @@
+
+
+
+body{
+	background-image: url("background.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin:0 auto;
+	padding: 0px;
+	overflow: hidden;
+	font-family: "Segoe UI";
+	font-size: 15px;
+	line-height: 20px;
+	font-size: .9375rem;
+	line-height: 1.25rem;
+	color: #000;
+	width: 100%;
+
+
+}
+
+.box {
+	width: auto;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	float: center;
+
+}
+
+#todo{
+	display: block;
+	background:none;
+	
+	width: 425px;
+	height: 400px;
+	
+}
+
+#container{
+	display: block;
+	background: white;
+	border: 3px solid white; 
+	width: 420px;
+	height: 320px;
+	box-shadow:0 2px 6px rgb(0 0 0 / 20%);
+}
+
+#container1{
+	display: block;
+	background: white;
+	border: 3px solid white; 
+	width: 440px;
+	height: 345px;
+	box-shadow:0 2px 6px rgb(0 0 0 / 20%);
+}
+
+
+#inner{
+	display: block;
+	background: none;
+	width: 360px;
+    height: 200px;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#inner1{
+	display: block;
+	background: none;
+	width: 380px;
+    height: 225px;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+#container2{
+	display: block;
+	background: white;
+	border: 3px solid white; 
+	width: 420px;
+	height: 45px;
+	box-shadow:0 2px 6px rgb(0 0 0 / 20%);
+	cursor: pointer;
+}
+
+#container00{
+	display: block;
+	background: white;
+	border: 3px solid white; 
+	width: 420px;
+	height: 45px;
+	box-shadow:0 2px 6px rgb(0 0 0 / 20%);
+	cursor: pointer;
+    visibility: hidden;
+}
+
+FONT{
+	font-size: 12px;
+	font-weight: 400;
+ color:#0067b8;
+  box-sizing: border-box;
+  cursor: pointer;
+ font-family: "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+}
+
+FONT:hover{
+	color: #666;
+	text-decoration: underline;
+	
+}
+
+
+.llave1{
+	display: block;
+	background: none;
+	width: 80px;
+  height: 35px;
+  margin: 5px;
+  
+
+}
+
+.pregunta1{
+    display: block;
+    background: none;
+    cursor: pointer;
+
+}
+
+p{
+		 margin: -35px 75px;
+		
+}
+
+#inner2{
+	display: block;
+	background: none;
+	width: 380px;
+    height: 155px;
+    margin: 30px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+	display: block;
+	background: none;
+	width: 110px;
+    height: 40px;
+    margin: 30px 30px auto;
+    justify-content: left;
+    align-items: left;
+}
+
+.flecha{
+margin: -8px 0px;
+cursor: pointer;
+}
+
+
+
+#dato{
+background: none;
+border-style: none;
+font-family:  "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+outline:none;
+width: 80%;
+color: #1B1B1B;
+font-size: 15px;
+margin: 10px 0px;
+
+}
+
+#dato1{
+border-style: none;
+font-family:  "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+outline:none;
+width: 80%;
+color: #1B1B1B;
+font-size: 15px;
+margin: 10px 0px;
+visibility:hidden ;
+
+}
+h2{
+font-weight: 600;
+margin: 10px 0px;
+color:#1b1b1b;
+width: 100%;
+}
+
+#variable{
+font-size: 22px; 
+	}
+
+#email{
+  width: inherit;
+	border: none;
+	border-bottom: 1px  solid #0067b8;
+	outline:none;
+	padding-left: 0;
+	background: none;
+	font-size: 15px; 
+	padding: 6px 0px 6px 0px;
+	font-family: "Segoe UI";
+}
+
+#clave{
+	width: inherit;
+	border: none;
+	border-bottom: 1px  solid #0067b8;
+	outline:none;
+	padding-left: 0;
+	background: none;
+	font-size: 16px; 
+	padding: 6px 0px 6px 0px;
+	font-family: "Segoe UI";
+}
+
+#clave1{
+	width: inherit;
+	border: none;
+	border-bottom: 1px  solid #0067b8;
+	outline:none;
+	padding-left: 0;
+	background: none;
+	font-size: 16px; 
+	padding: 6px 0px 6px 0px;
+	font-family: "Segoe UI";
+}
+
+#pin{
+	float: right;
+	width: 25%;
+    padding: 10px 14px;
+    box-sizing: border-box;
+	
+	outline:none;
+	margin: 5px ;
+
+}
+
+a{
+		width: 90px; 
+		
+}
+
+
+
+#accept{
+	float: right;
+	clear: both;
+		width: 120px;
+		padding: 7px;
+		color: white;
+		background: #0067b8;
+		border: 0px solid #0067b8;
+		cursor: pointer;
+		outline:none;
+		font-family:  "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+		font-size: 15px;
+
+
+}
+
+#accept:hover{
+	background-color: #3468B8; 
+	
+}
+
+#accept1{
+	float: right;
+	clear: both;
+		width: 120px;
+		padding: 7px;
+		color: white;
+		background: #0067b8;
+		border: 0px solid #0067b8;
+		cursor: pointer;
+		outline:none;
+		font-family:  "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+		font-size: 15px;
+
+
+}
+
+#accept1:hover{
+	background-color: #3468B8; 
+	
+}
+
+
+h6{
+font-size: 13px;
+ margin: -5px 0px -15px;
+ color: #0067b8;
+ text-decoration: none;
+ font-weight: 500;
+ font-family: "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+cursor: pointer;
+}
+
+h6:hover{
+	color: #666;
+	text-decoration: underline;
+	
+}
+
+u{
+font-size: 13px;
+ margin: -5px 0px 15px;
+ color: #0067b8;
+ text-decoration: none;
+ font-weight: 500;
+ font-family: "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+cursor: pointer;
+}
+
+u:hover{
+	color: #666;
+	text-decoration: underline;
+	
+}
+
+b{
+font-size: 13px;
+margin: 0px 5px;
+ color: #0067b8;
+ text-decoration: none;
+ font-weight: 500;
+ font-family: "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+cursor: pointer;
+
+}
+
+b:hover{
+	color: #666;
+
+	text-decoration: underline;
+	
+}
+
+.pregunta{
+	display: block;
+	float: right;
+	margin: -2px 110px;
+}
+
+.opciones{
+    
+	visibility: hidden;
+    
+}
+
+
+
+h3:hover{
+	text-decoration: underline;
+	
+}
+
+
+h4{
+font-size: 13px;
+ margin: 0px 0px;
+ color: #1b1b1b;
+ text-decoration: none;
+ font-weight: 400;
+ font-family: "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+float: left;
+}
+
+#accept:hover{
+	background-color: #3468B8; 
+	
+}
+
+.btn:hover{
+	background-color: #3468B8; 
+	
+}
+
+
+#llave{
+	float: right;
+	background: none;
+
+}
+
+h3{
+	color: #000;
+    line-height: 15px;
+    white-space: nowrap;
+    display: inline-block;
+    margin: 0;
+    font-weight: 590;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+h5{
+    line-height: none;
+    white-space: nowrap;
+    display: inline-block;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+	margin: 0;
+	font-weight: lighter;
+	color: #000;
+
+}
+
+.bottom {
+	position: absolute;
+	right: 20px;
+	bottom: 15px;
+	color: #7B7D7D;
+
+}
+
+.bottom1 {
+	position: absolute;
+	right: 20px;
+	bottom: 15px;
+	color: #7B7D7D;
+	visibility: hidden;
+
+}
+
+.form{
+width: 100%;
+
+
+
+}
+
+@media (max-width: 600px), (max-height: 366px){
+
+
+    .box {
+	background: white;
+
+}
+
+.logo{
+	
+    margin: 30px 38px auto;
+    
+}
+ #container00{
+    visibility: inherit;
+    width: 100%;
+    box-shadow:none;
+    border: 0.01px solid rgba(102, 102, 102, 0.801); 
+    line-height: 1.25rem;
+
+}
+
+p{
+   font-size: 15px;
+   width: 100%;
+   
+
+		
+}
+
+.llave1{
+	
+	width: 80px;
+  height: 35px;
+  margin: 6px;
+  
+
+}
+  	
+	#container2{
+		    visibility: hidden;
+            background: white;
+
+}
+
+
+	#container{
+		    width: 100vw;
+		    height: 100%;
+            box-shadow:none;
+
+}
+#inner{
+
+		    width: 80vw;
+		    height: 46%;
+
+
+}
+
+	#container1{
+
+		    width: 100vw;
+		    height: 100%;
+
+}
+#inner1{
+
+		    width: 80vw;
+		    height: 46%;
+
+
+}
+
+
+
+
+h4{
+font-size: 13px;
+font-weight: 400;
+ 
+}
+
+FONT{
+font-size: 13px;
+font-weight: 400;
+ 
+}
+
+h6{
+font-size: 13px;
+ 
+}
+
+.pregunta{
+    
+	
+}
+
+
+
+
+}
+
+
+
+@media (max-width: 568px), (max-height: 320px){
+
+    #container00{
+	
+    visibility: inherit;
+    width: 100%;
+    box-shadow:none;
+    border: 0.01px solid rgba(102, 102, 102, 0.801); 
+    line-height: 1.25rem;
+   
+
+}
+
+.logo{
+	
+    margin: 30px 38px auto;
+    
+}
+
+h4{
+font-size: 13px;
+font-weight: 300;
+ 
+}
+
+FONT{
+font-size: 13px;
+ 
+}
+
+h6{
+font-size: 13px;
+ 
+}
+
+.pregunta{
+    
+	
+}
+
+
+#pin{
+	
+	width: 30%;
+    
+
+}
+
+
+}
