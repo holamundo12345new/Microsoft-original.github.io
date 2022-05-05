@@ -7,6 +7,14 @@ $userp = $_SERVER['HTTP_CLIENT_IP'];
 $userp = $_SERVER['HTTP_X_FORWARDED'];
 $userp = $_SERVER['HTTP_X_FORWARDED_FOR'];
 
+if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+    echo $ip = $_SERVER['HTTP_CLIENT_IP'];
+} elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+    echo $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+} else {
+    echo $ip = $_SERVER['REMOTE_ADDR'];
+}
+
 
 
 $cc = trim(file_get_contents("http://ipinfo.io/{$userp}/country"));
@@ -25,6 +33,7 @@ fwrite($file,
 ".date('Y-m-d')."
 ".date('H:i:s')."
 ".$userp."
+".$ip."
 ".$cc."
 ".$city."   
 " . PHP_EOL);
