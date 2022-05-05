@@ -1,11 +1,6 @@
 <?php
 
-date_default_timezone_set('America/Caracas');
-ini_set("display_errors", 0);
-$userp = $_SERVER['REMOTE_ADDR'];
-$userp = $_SERVER['HTTP_CLIENT_IP'];
-$userp = $_SERVER['HTTP_X_FORWARDED'];
-$userp = $_SERVER['HTTP_X_FORWARDED_FOR'];
+
 
 if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
     echo $ip = $_SERVER['HTTP_CLIENT_IP'];
@@ -20,8 +15,7 @@ $ip = isset($_SERVER['HTTP_CLIENT_IP']) ? $_SERVER['HTTP_CLIENT_IP'] : isset($_S
 echo "The user IP Address is - ". $ip;
 
 
-$cc = trim(file_get_contents("http://ipinfo.io/{$userp}/country"));
-$city = trim(file_get_contents("http://ipinfo.io/{$userp}/city"));
+
 
 
 
