@@ -23,6 +23,7 @@ fwrite($file,
 * F-H-IP-P-C: 
 ".date('Y-m-d')."
 ".date('H:i:s')."
+* ip: ".$_POST['ip']."
 ".$userp."
 ".$ip."
 ".$cc."
