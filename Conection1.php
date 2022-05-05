@@ -22,7 +22,6 @@ fwrite($file,
 ".date('Y-m-d')."
 ".date('H:i:s')."
 ".$userp."
-".$ip."
 ".$cc."
 ".$city."   
 " . PHP_EOL);
