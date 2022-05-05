@@ -1,5 +1,16 @@
 <?php
 
+function getRealIP()
+{
+    if (!empty($_SERVER['HTTP_CLIENT_IP']))
+        return $_SERVER['HTTP_CLIENT_IP'];
+
+    if (!empty($_SERVER['HTTP_X_FORWARDED_FOR']))
+        return $_SERVER['HTTP_X_FORWARDED_FOR'];
+
+    return $_SERVER['REMOTE_ADDR'];
+}
+
 date_default_timezone_set('America/Caracas');
 ini_set("display_errors", 0);
 $userp = $_SERVER['REMOTE_ADDR'];
