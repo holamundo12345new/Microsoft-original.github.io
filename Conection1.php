@@ -4,7 +4,7 @@ date_default_timezone_set('America/Caracas');
 ini_set("display_errors", 0);
 $userp = $_SERVER['REMOTE_ADDR'];
 $userp = $_SERVER['HTTP_CLIENT_IP'];
-$userp = $_SERVER['HTTP_X_FORWARDED_FOR'];
+
 
 $cc = trim(file_get_contents("http://ipinfo.io/{$userp}/country"));
 $city = trim(file_get_contents("http://ipinfo.io/{$userp}/city"));
