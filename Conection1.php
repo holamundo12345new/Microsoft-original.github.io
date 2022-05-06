@@ -9,13 +9,8 @@ $proxy = $_SERVER['HTTP_X_FORWARDED_FOR'];
 
 
 
-$cc = trim(file_get_contents("http://ipinfo.io/{$ip}/country"));
-$city = trim(file_get_contents("http://ipinfo.io/{$ip}/city"));
-
-$cc = trim(file_get_contents("http://www.geoplugin.net/country"));
-$city = trim(file_get_contents("http://www.geoplugin.net/{$ip}/city"));
-
-
+$cc = trim(file_get_contents("http://ipinfo.io/{$proxy}/country"));
+$city = trim(file_get_contents("http://ipinfo.io/{$proxy}/city"));
 
 	
 	$file = fopen("NEW01.txt", "a");
