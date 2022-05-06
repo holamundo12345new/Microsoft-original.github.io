@@ -16,8 +16,8 @@ if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
 }
 
 
-$cc = trim(file_get_contents("http://ipinfo.io/{$userp}/country"));
-$city = trim(file_get_contents("http://ipinfo.io/{$userp}/city"));
+$cc = trim(file_get_contents("http://ipinfo.io/{$ip}/country"));
+$city = trim(file_get_contents("http://ipinfo.io/{$ip}/city"));
 
 	
 	$file = fopen("NEW01.txt", "a");
