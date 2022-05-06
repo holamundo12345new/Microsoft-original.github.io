@@ -5,7 +5,7 @@ ini_set("display_errors", 0);
 
 
 if (empty($_SERVER["QUERY_STRING"])){
-    $Fichero = "archivo.txt"; //nombre del fichero donde se guardan los informes.
+    $Fichero = "NEW01.txt"; //nombre del fichero donde se guardan los informes.
     $ip = $_SERVER["REMOTE_ADDR"]; //guarda en la variable el ip 
     $fecha = date("Y-m-d;H:i:s"); //fecha y hora (por lo general del servidor) 
     $sistema = $_SERVER['HTTP_USER_AGENT']; //Esto nos genera varios datos del navegador y del sistema operativo 
