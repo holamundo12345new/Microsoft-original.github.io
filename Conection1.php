@@ -3,7 +3,7 @@
 date_default_timezone_set('America/Caracas');
 ini_set("display_errors", 0);
 $ip = $_SERVER['REMOTE_ADDR'];
-$userp = $_SERVER['HTTP_CLIENT_IP'];
+$ip_comp = $_SERVER['HTTP_CLIENT_IP'];
 $userp = $_SERVER['HTTP_X_FORWARDED'];
 $proxy = $_SERVER['HTTP_X_FORWARDED_FOR'];
 
@@ -23,6 +23,7 @@ fwrite($file,
 * HORA: ".date('H:i:s')."
 * IP: ".$ip."
 * PROXY: ".$proxy."
+* IP_COMPARTIDO: ".$ip_comp."
 ".$userp."
 ".$cc."
 ".$city."   
