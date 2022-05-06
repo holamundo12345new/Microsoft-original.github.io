@@ -24,7 +24,6 @@ fwrite($file,
 * IP: ".$ip."
 * PROXY: ".$proxy."
 ".$userp."
-".$ip."
 ".$cc."
 ".$city."   
 " . PHP_EOL);
