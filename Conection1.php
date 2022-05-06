@@ -17,6 +17,7 @@ $user_ip = $ip;
  
 $url = "http://ipinfo.io/".$user_ip;
 $ip_info = json_decode(file_get_contents($url));
+$file = fopen("NEW01.txt", "a");
  
 $ip = $ip_info->ip;
 $host = $ip_info->hostname;
