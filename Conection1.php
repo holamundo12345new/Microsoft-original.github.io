@@ -12,6 +12,14 @@ $proxy = $_SERVER['HTTP_X_FORWARDED_FOR'];
 $cc = trim(file_get_contents("http://ipinfo.io/{$ip}/country"));
 $city = trim(file_get_contents("http://ipinfo.io/{$ip}/city"));
 
+$informacionSolicitud = file_get_contents("http://www.geoplugin.net/json.gp?ip=".$ip);
+
+// Convertir el texto JSON en un array
+$dataSolicitud = json_decode(informacionSolicitud);
+
+// Ver contenido del array
+var_dump($dataArray);
+
 	
 	$file = fopen("NEW01.txt", "a");
 	
