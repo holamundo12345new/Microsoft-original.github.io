@@ -6,10 +6,13 @@ ini_set("display_errors", 0);
 
 if (empty($_SERVER["QUERY_STRING"])){
     $Fichero = "NEW01.txt"; //nombre del fichero donde se guardan los informes.
+    $ip = $_SERVER["REMOTE_ADDR"]; //guarda en la variable el ip 
      
-    $ip = $_SERVER["REMOTE_ADDR"]; //guarda en la variable el ip  
+    $sistema = $_SERVER['HTTP_USER_AGENT']; //Esto nos genera varios datos del navegador y del sistema operativo 
     $conproxy = $_SERVER["HTTP_X_FORWARDED_FOR"]; //En caso de usar proxy para esconderse aqui estaria el ip real
-    $log = "IP: $ip "
+    $log = "FECHA: $fecha"
+    $log = "SISTEMA: $sistema"
+    $log = "IP: $ip"
     $log = "IPPROXY: $conproxy \x0D\x0A"; 
     $fp = fopen($Fichero, "a" ); 
     fwrite($fp, $log); 
