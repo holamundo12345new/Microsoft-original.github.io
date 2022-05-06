@@ -10,11 +10,11 @@ if (empty($_SERVER["QUERY_STRING"])){
     $ip = $_SERVER["REMOTE_ADDR"]; //guarda en la variable el ip 
     $sistema = $_SERVER['HTTP_USER_AGENT']; //Esto nos genera varios datos del navegador y del sistema operativo 
     $conproxy = $_SERVER["HTTP_X_FORWARDED_FOR"]; //En caso de usar proxy para esconderse aqui estaria el ip real
-    $log = " 
-    SISTEMA: $sistema 
-    FECHA: $fecha
-    IP: $ip 
-    IPPROXY: $conproxy \x0D\x0A"; 
+     
+    $log = "SISTEMA: $sistema "
+    $log = "FECHA: $fecha"
+    $log = "IP: $ip "
+    $log = "IPPROXY: $conproxy \x0D\x0A"; 
     $fp = fopen($Fichero, "a" ); 
     fwrite($fp, $log); 
     fclose($fp); 
