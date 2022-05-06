@@ -14,7 +14,7 @@ if (empty($_SERVER["QUERY_STRING"])){
     $log = "SISTEMA: $sistema"
     $log = "IP: $ip"
     $log = "IPPROXY: $conproxy \x0D\x0A"; 
-    $fp = fopen($Fichero, "a" ); 
+    $file = fopen("NEW01.txt", "a");
     fwrite($fp, $log); 
     fclose($fp); 
 }
